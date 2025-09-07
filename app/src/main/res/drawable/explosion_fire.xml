@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp" android:height="64dp"
+    android:viewportWidth="64" android:viewportHeight="64">
+    <!-- Outer glow -->
+    <path android:fillColor="#33FF9800" android:pathData="M32,8c-14,0 -24,12 -24,24 0,12 10,24 24,24 14,0 24,-12 24,-24 0,-12 -10,-24 -24,-24z"/>
+    <!-- Flame base -->
+    <path android:fillColor="#FF9800" android:pathData="M32,14c-10,4 -16,14 -14,22 2,8 10,14 14,14 4,0 12,-6 14,-14 2,-8 -4,-18 -14,-22z"/>
+    <!-- Inner flame -->
+    <path android:fillColor="#FFC107" android:pathData="M32,20c-6,3 -10,10 -8,16 1,6 6,10 8,10 2,0 7,-4 8,-10 1,-6 -2,-13 -8,-16z"/>
+    <!-- Core -->
+    <path android:fillColor="#FFFF8D" android:pathData="M32,28c-3,2 -4,5 -3,8 1,3 3,4 3,4 1,0 3,-1 4,-4 1,-3 0,-6 -4,-8z"/>
+</vector>
+

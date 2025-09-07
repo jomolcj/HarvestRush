@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Animated drifting violet gradient background -->
+    <com.example.harvestrush.AnimatedGradientBackgroundView
+        android:id="@+id/animated_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Foreground stacked content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="32dp">
+
+        <LinearLayout
+            android:id="@+id/cluster_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.30">
+
+            <!-- 3D Curved Glowing Pulsing Title -->
+            <com.example.harvestrush.CurvedJiggleTitleView
+                android:id="@+id/animated_title"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="4dp"
+                android:contentDescription="Harvest Rush Title"
+                app:harvestTitleBreathing="true"
+                app:harvestTitleStraight="false"
+                app:harvestTitlePrimaryColor="#FFE97B"
+                app:harvestTitleShadowColor="#80220E00"
+                app:harvestTitleGlowColor="#FFFFF7C0"
+                app:harvestTitleDepthLayers="7"
+                app:harvestTitleExtrudeOffsetDp="1.8"
+                app:harvestTitleGlowRadiusDp="22"
+                app:harvestTitlePulseAmplitude="0.11"
+                app:harvestTitlePulseSpeed="0.85" />
+
+            <!-- Scrollable full instructions list -->
+            <ScrollView
+                android:id="@+id/instructions_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="320dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="14dp"
+                android:fadeScrollbars="false"
+                android:overScrollMode="ifContentScrolls">
+
+                <TextView
+                    android:id="@+id/tv_rules"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/instructions_box"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="@string/instructions_header" />
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btn_start_game"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Start Game" />
+
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Exit" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

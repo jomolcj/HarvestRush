@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HarvestRush" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Remove any default overlay/border -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- Draw behind system bars and make status bar transparent -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Optional: keep nav bar dark (can switch to transparent if desired) -->
+        <item name="android:navigationBarColor">#000000</item>
+        <!-- Prevent automatic contrast scrim that can add a faint tint -->
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <!-- If backgrounds are dark, keep light status icons off -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.HarvestRush" parent="Base.Theme.HarvestRush" />
+</resources>

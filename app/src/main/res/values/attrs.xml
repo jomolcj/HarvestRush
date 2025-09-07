@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CurvedJiggleTitleView">
+        <!-- Asset path inside assets/fonts/ e.g. fonts/luckiest_guy.ttf -->
+        <attr name="harvestTitleFontAsset" format="string" />
+        <!-- Enable subtle pulse scaling -->
+        <attr name="harvestTitleBreathing" format="boolean" />
+        <!-- If true draw straight baseline instead of curve -->
+        <attr name="harvestTitleStraight" format="boolean" />
+        <!-- 3D / glow customization -->
+        <attr name="harvestTitlePrimaryColor" format="color" />
+        <attr name="harvestTitleShadowColor" format="color" />
+        <attr name="harvestTitleGlowColor" format="color" />
+        <attr name="harvestTitleDepthLayers" format="integer" />
+        <attr name="harvestTitleExtrudeOffsetDp" format="float" />
+        <attr name="harvestTitleGlowRadiusDp" format="float" />
+        <attr name="harvestTitlePulseAmplitude" format="float" />
+        <attr name="harvestTitlePulseSpeed" format="float" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1080dp"
+    android:height="1920dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="1920">
+    <!-- Simple sky -->
+    <path android:fillColor="#87CEFA" android:pathData="M0,0h1080v1920h-1080z"/>
+    <!-- Grass strip (bottom third) -->
+    <path android:fillColor="#4CAF50" android:pathData="M0,1280h1080v640h-1080z"/>
+    <!-- Optional lighter gradient band at horizon for depth -->
+    <path android:fillColor="#66FFFFFF" android:fillAlpha="0.15" android:pathData="M0,1180h1080v140h-1080z"/>
+</vector>
